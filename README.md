@@ -1,8 +1,6 @@
 # jpeg_dc_detection
 
-### Please read the following instructions before executing the code ####
-
-The main code to reproduce the results is ./code/generate_results/MCCNN_Classifier.py. The code has two types of parameters, 
+This repository contains source code useful for reproducing results presented in the paper "Double JPEG Compression Detection of Distinguishable Blocks in Images Compressed With Same Quantization Matrix" (MLSP 2020)
 
 1) Fixed Parameters: These have been defined within the MCCNN_Classifier.py, are a part of the default runtime settings of our model as mentioned in the paper. 
 
