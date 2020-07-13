@@ -2,19 +2,21 @@
 
 This repository contains source code useful for reproducing results presented in the paper "Double JPEG Compression Detection of Distinguishable Blocks in Images Compressed With Same Quantization Matrix" (MLSP 2020)
 
+# Usage
+
 1) Fixed Parameters: These have been defined within the MCCNN_Classifier.py, are a part of the default runtime settings of our model as mentioned in the paper. 
 
 They include, 
-
-patch_size = 8
-scale = 1
-l2_reg = 0.0001
-method = 'MCNN'
-bs = 64
-lr = 0.001
-save_name = 'MCNN'
-max_epochs = 60
-val_split = 0.2
+\begin{itemize}
+\item patch_size = 8
+\item scale = 1
+\item l2_reg = 0.0001
+\item method = 'MCNN'
+\item bs = 64
+\item lr = 0.001
+\item save_name = 'MCNN'
+\item max_epochs = 60
+\item val_split = 0.2
 
 
 
