@@ -36,14 +36,9 @@ b) Command Line Parameters: These parametera can be supplied at the time of runn
 4.  Run for all quality factors --all_Q = {0,1} 
 5.  Number of repeated runs, --runs = {1,2,3,4,5,6,7,8,9,10}
 
-# Note : 
- 
-i) please be aware that Qf = {20,40} is utilized for index = 'all' in our approach. 
-ii) if all_Q = 1, then the --Qf argument is ignored.
-
-So, if you want to run at Qf = 60, index = 1 and stack = 2 for 2 runs the code is, 
-
-python MCCNN.py --Qf=60 --index=1 --stack=2 --runs=2
+c) Sample Command:  So, if you want to run at Qf = 60, index = 1 and stack = 2 for 2 runs the code is, 
+	
+		python MCCNN.py --Qf=60 --index=1 --stack=2 --runs=2
 
 
 3) Results:  The results are saved in a folder called proposed results, in result_itr_(iteration_number).mat, the folder hierarchy is as shown below, 
