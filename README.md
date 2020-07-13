@@ -12,9 +12,19 @@ Our code uses the following dependencies:
 5) matplotlib = '3.1.3'
 6) numpy = '1.18.1'
 
-1) Fixed Parameters: These have been defined within the MCCNN_Classifier.py, are a part of the default runtime settings of our model as mentioned in the paper. 
+# Usage 
 
-They include, 
+The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
+
+1. patch_size = 8
+2. scale = 1
+3. l2_reg = 0.0001
+4. bs = 64
+5. lr = 0.001
+6. save_name = 'MCNN'
+7. max_epochs = 60
+8. val_split = 0.2
+
 
 $ 
 \begin{itemize}
