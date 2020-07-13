@@ -16,6 +16,8 @@ Our code uses the following dependencies:
 
 The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
 
+a) Fixed Parameters:
+
 1. patch_size = 8
 2. scale = 1
 3. l2_reg = 0.0001
@@ -26,29 +28,13 @@ The main code to run our approach is MCNN_Classifier.py, which use the default r
 8. val_split = 0.2
 
 
-$ 
-\begin{itemize}
-\item patch_size = 8
-\item scale = 1
-\item l2_reg = 0.0001
-\item method = 'MCNN'
-\item bs = 64
-\item lr = 0.001
-\item save_name = 'MCNN'
-\item max_epochs = 60
-\item val_split = 0.2
-\end{itemize}
-$
+b) Command Line Parameters: These parametera can be supplied at the time of running the code. Below are the possible combinations that can be given for command line arguments. 
 
-
-
-2) Command Line Parameters: These parametera can be supplied at the time of running the code. Below are the possible combinations that can be given for command line arguments. 
-
-i)   Quality factor --Qf = {20,40,60,70,75,80,85,90}
-ii)  Stability index  --index = {'1' or 'all'} 
-iii) Number of error images --stack ={2,3}
-(iv) Run for all quality factors --all_Q = {0,1} 
-(v)  --runs = {1,2,3,4,5,6,7,8,9,10}
+1.  Quality factor --Qf = {20,40,60,70,75,80,85,90}
+2.  Stability index  --index = {'1' or 'all'} 
+3.  Number of error images --stack ={2,3}
+4.  Run for all quality factors --all_Q = {0,1} 
+5.  Number of repeated runs, --runs = {1,2,3,4,5,6,7,8,9,10}
 
 # Note : 
  
