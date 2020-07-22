@@ -16,7 +16,7 @@ Our code uses the following dependencies:
 
 # Data Creation
 
-1. Download the UCID dataset containing 1338 images .TIF images and place it in the ./data folder. 
+1. Download the [UCID dataset](https://drive.google.com/drive/folders/1AFZmvEZzHjjZJA5jMgTZKk4BuZXV3zH7?usp=sharing) containing 1338 images .TIF images and place it in the ./data folder. 
 
 2. Then execute ./code/data_creation/data_maker.m to create the Compressed_UCID_gray_full dataset. 
 
