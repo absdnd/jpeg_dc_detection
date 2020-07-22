@@ -29,16 +29,16 @@ you can install all dependencies using `pip install -r requirements.txt`
 ```
 /proposed_results
  /MCNN
- 	  /index_1
+    /index_1
     /index_all
-		      /Quality_Qf
-          /MCNN_stack_~_scale_~
-		           /results
-                 result_itr_(iteration_number).mat  
+        /Quality_Qf
+           /MCNN_stack_~_scale_~
+	      /results
+                  result_itr_(iteration_number).mat  
              /loss_plots
-				             loss_itr_(iteration_number).mat	
-				         /weights
-		               best_weights_(iteration_number).mat
+		   loss_itr_(iteration_number).mat	
+	     /weights
+		   best_weights_(iteration_number).mat
 ```
 
 
