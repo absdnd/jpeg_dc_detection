@@ -51,12 +51,6 @@ The file structure after saving the dataset would be as follows,
 
 The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
 
-#### Fixed Parameters: 
-
-`patch_size = 8`, `scale = 1`
-
-
-
 #### Command Line Parameters: 
 
 These parameters can be supplied at the time of running the code. Below are the possible combinations that can be given for command line arguments. 
