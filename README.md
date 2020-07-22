@@ -14,7 +14,7 @@ Our code uses the following dependencies:
 7) jpeg-read-toolbox
 8) libsvm-matlab
 
-# Data Creation (not recommended)
+# Data Creation
 
 1. Download the UCID dataset containing 1338 images .TIF images and place it in the ./data folder. 
 
