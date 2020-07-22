@@ -56,16 +56,6 @@ These parameters can be supplied at the time of running the code. Below are the 
 If you want to run at Qf = 60, index = 1 and stack = 2 for 2 runs the code is,  `python MCCNN.py --Qf=60 --index=1 --stack=2 --runs=2`
 
 
-3) Results:  The results are saved in a folder called proposed results, in result_itr_(iteration_number).mat, the folder hierarchy is as shown below, 
-
-% Obtaining the baseline results
-
-Run ./code/generate_results/EBSF.m to obtain the baseline results of our approach. 
-
-i) Make sure to keep the libsvm folder in the same directory.
-
-The output_file logs the results of the approach, the avg_accuracy variable stores the resulting accuracy of the run. 
-The average accuracy is also displayed after the execution of the code during runtime.
 
 
 
