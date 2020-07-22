@@ -17,11 +17,11 @@ you can install all dependencies using `pip install -r requirements.txt`
 
 + Download the [UCID dataset](https://drive.google.com/drive/folders/1AFZmvEZzHjjZJA5jMgTZKk4BuZXV3zH7?usp=sharing) containing 1338 images .TIF images and place it in the ./data folder. Also compile and store the [jpeg-read-toolbox](http://dde.binghamton.edu/download/jpeg_toolbox.zip) in the correct location. 
 
-- Then execute ./code/data_creation/data_maker.m to create the Compressed_UCID_gray_full dataset. 
+- Then execute `./code/data_creation/data_maker.m` to create the Compressed_UCID_gray_full dataset. 
 
-- Execute  ./code/data_creation/patch_maker.m , to create the training and testing 8 x 8 patches. 
+- Execute  `./code/data_creation/patch_maker.m` , to create the training and testing 8 x 8 patches. 
 
-- After this please execute ./code/data_creation/save_error_images.m in order to create all the error images.
+- After this please execute `./code/data_creation/save_error_images.m` in order to create all the error images.
 
 - This should create the data for the training and testing pipeline. 
 
