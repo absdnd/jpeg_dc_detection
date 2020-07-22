@@ -72,6 +72,17 @@ python /code/generate_results/MCCNN.py \
 -- runs = 2
 ```
 
+The resultant directory structure, with `output_files.mat` containing the resultant predictions. 
+```
+/proposed_results
+  /MCNN
+	  /Quality_~
+		   /index_1
+			    /output_files.mat; 
+      /index_all/
+          /output_files.mat;
+```
+
 
 
 
