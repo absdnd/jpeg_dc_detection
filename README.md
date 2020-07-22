@@ -52,7 +52,7 @@ b) Command Line Parameters: These parameters can be supplied at the time of runn
 4.  Run for all quality factors --all_Q = {0,1} 
 5.  Number of repeated runs, --runs = {1,2,3,4,5,6,7,8,9,10}
 
-# Note : 
+# Execution: 
  
 i) please be aware that Qf = {20,40} is utilized for index = 'all' in our approach. 
 ii) if all_Q = 1, then the --Qf argument is ignored.
