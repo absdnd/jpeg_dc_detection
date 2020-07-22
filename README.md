@@ -1,6 +1,6 @@
 # Block Double compression detection using Multi-Coloumn CNN.
 
-This repository contains the code for reproducing results presented in the paper "Double JPEG Compression Detection of Distinguishable Blocks in Images Compressed With Same Quantization Matrix" (MLSP 2020)
+This repository contains the code for reproducing results presented in the paper ["Double JPEG Compression Detection of Distinguishable Blocks in Images Compressed With Same Quantization Matrix" (MLSP 2020)]
 
 # Environments and Dependenices
 
