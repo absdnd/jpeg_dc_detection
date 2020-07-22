@@ -47,7 +47,7 @@ The file structure after saving the dataset would be as follows,
      
 ```
 
-### Usage 
+### Training and Inference
 
 The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
 
@@ -63,9 +63,14 @@ These parameters can be supplied at the time of running the code. Below are the 
 
 #### Sample Command. 
 
-If you want to run at Qf = 60, index = 1 and stack = 2 for 2 runs the code is,  `python MCCNN.py --Qf=60 --index=1 --stack=2 --runs=2`
-
-
+To run at quality  Qf = 60, index = 1 and stack = 2 for 2 runs the code is: 
+`
+python /code/generate_results/MCCNN.py \
+-- Qf = 60 \
+-- index = 1 \
+-- stack = 2\
+-- runs = 2
+`
 
 
 
