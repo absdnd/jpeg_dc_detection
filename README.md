@@ -58,7 +58,9 @@ The main code to run our approach is MCNN_Classifier.py, which use the default r
 + val_split = 0.2
 
 
-#### Command Line Parameters: These parameters can be supplied at the time of running the code. Below are the possible combinations that can be given for command line arguments. 
+#### Command Line Parameters: 
+
+These parameters can be supplied at the time of running the code. Below are the possible combinations that can be given for command line arguments. 
 
 -  Quality factor --Qf = {20,40,60,70,75,80,85,90}
 -  Stability index  --index = {'1' or 'all'} 
