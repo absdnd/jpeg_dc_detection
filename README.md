@@ -23,8 +23,6 @@ you can install all dependencies using `pip install -r requirements.txt`
 
 - After this please execute `./code/data_creation/save_error_images.m` in order to create all the error images.
 
-
-
 ### Usage 
 
 The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
