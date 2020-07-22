@@ -55,11 +55,11 @@ The main code to run our approach is MCNN_Classifier.py, which use the default r
 
 These parameters can be supplied at the time of running the code. Below are the possible combinations that can be given for command line arguments. 
 
--  Quality factor --Qf = {20,40,60,70,75,80,85,90}
--  Stability index  --index = {'1' or 'all'} 
--  Number of error images --stack ={2,3}
--  Run for all quality factors --all_Q = {0,1} 
--  Number of repeated runs, --runs = {1,2,3,4,5,6,7,8,9,10}
+-  Quality factor `--Qf = {20,40,60,70,75,80,85,90}`
+-  Stability index  `--index = {'1' or 'all'}`
+-  Number of error images `--stack ={2,3}`
+-  Run for all quality factors `--all_Q = {0,1}`
+-  Number of repeated runs, `--runs = {1,2,3,4,5,6,7,8,9,10}`
 
 #### Sample Command. 
 
