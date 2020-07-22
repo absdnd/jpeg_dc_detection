@@ -64,13 +64,13 @@ These parameters can be supplied at the time of running the code. Below are the 
 #### Sample Command. 
 
 To run at quality  Qf = 60, index = 1 and stack = 2 for 2 runs the code is: 
-`
+```shell
 python /code/generate_results/MCCNN.py \
 -- Qf = 60 \
 -- index = 1 \
 -- stack = 2\
 -- runs = 2
-`
+```
 
 
 
