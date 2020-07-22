@@ -1,18 +1,17 @@
-# Double compression detection using Multi-Coloumn CNN.
+# Block Double compression detection using Multi-Coloumn CNN.
 
-This repository contains source code useful for reproducing results presented in the paper "Double JPEG Compression Detection of Distinguishable Blocks in Images Compressed With Same Quantization Matrix" (MLSP 2020)
+This repository contains the code for reproducing results presented in the paper "Double JPEG Compression Detection of Distinguishable Blocks in Images Compressed With Same Quantization Matrix" (MLSP 2020)
 
-# dependencies
-Our code uses the following dependencies: 
+# Environments and Dependenices
 
-1) python = '3.6.10'
-2) tensorflow = '1.12.0' (cudatoolkit=9.0 & cudnn=7.1.2)
-3) scipy = '1.4.1'
-4) sklearn = '0.22.1'
-5) matplotlib = '3.1.3'
-6) numpy = '1.18.1'
-7) jpeg-read-toolbox
-8) libsvm-matlab
+- python = '3.6.10'
+- tensorflow = '1.12.0' (cudatoolkit=9.0 & cudnn=7.1.2)
+- scipy = '1.4.1'
+- sklearn = '0.22.1'
+- matplotlib = '3.1.3'
+- numpy = '1.18.1'
+- jpeg-read-toolbox
+- libsvm-matlab
 
 # Data Creation
 
