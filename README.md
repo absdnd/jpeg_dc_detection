@@ -24,6 +24,23 @@ you can install all dependencies using `pip install -r requirements.txt`
 - After this please execute `./code/data_creation/save_error_images.m` in order to create all the error images.
 
 
++ The file structure should look like:
+
+```
+/proposed_results
+ /MCNN
+ 	  /index_1
+    /index_all
+		      /Quality_Qf
+          /MCNN_stack_~_scale_~
+		           /results
+                 result_itr_(iteration_number).mat  
+             /loss_plots
+				             loss_itr_(iteration_number).mat	
+				         /weights
+		               best_weights_(iteration_number).mat
+```
+
 
 # Usage 
 
