@@ -10,22 +10,24 @@ This repository contains the code for reproducing results presented in the paper
 - sklearn = '0.22.1'
 - matplotlib = '3.1.3'
 - numpy = '1.18.1'
-- jpeg-read-toolbox
-- libsvm-matlab
 
-# Data Creation
 
-1. Download the [UCID dataset](https://drive.google.com/drive/folders/1AFZmvEZzHjjZJA5jMgTZKk4BuZXV3zH7?usp=sharing) containing 1338 images .TIF images and place it in the ./data folder. 
+# Getting Started
 
-2. Then execute ./code/data_creation/data_maker.m to create the Compressed_UCID_gray_full dataset. 
+## Data Generation
 
-3. Execute  ./code/data_creation/patch_maker.m , to create the training and testing 8 x 8 patches. 
+- Download the [UCID dataset](https://drive.google.com/drive/folders/1AFZmvEZzHjjZJA5jMgTZKk4BuZXV3zH7?usp=sharing) containing 1338 images .TIF images and place it in the ./data folder. Please also compile and store the [jpeg-read-toolbox](http://dde.binghamton.edu/download/jpeg_toolbox.zip) in the correct location. 
 
-4. After this please execute ./code/data_creation/save_error_images.m in order to create all the error images.
 
-5. This should create the data for the training and testing pipeline. 
+- Then execute ./code/data_creation/data_maker.m to create the Compressed_UCID_gray_full dataset. 
 
-Please be aware that this saves all 8x8 possible blocks in our dataset and hence will take a long time to execute and utilize a lot of fragmented memory. For direct usage we have provided, the .mat files of data. 
+- Execute  ./code/data_creation/patch_maker.m , to create the training and testing 8 x 8 patches. 
+
+- After this please execute ./code/data_creation/save_error_images.m in order to create all the error images.
+
+- This should create the data for the training and testing pipeline. 
+
+- Please be aware that this saves all 8x8 possible blocks in our dataset and hence will take a long time to execute and utilize a lot of fragmented memory. For direct usage we have provided, the .mat files of data. 
 
 # Usage 
 
