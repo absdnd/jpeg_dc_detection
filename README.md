@@ -46,7 +46,7 @@ you can install all dependencies using `pip install -r requirements.txt`
 
 The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
 
-a) Fixed Parameters:
+#### Fixed Parameters:
 
 + patch_size = 8
 + scale = 1
@@ -58,7 +58,7 @@ a) Fixed Parameters:
 + val_split = 0.2
 
 
-b) Command Line Parameters: These parameters can be supplied at the time of running the code. Below are the possible combinations that can be given for command line arguments. 
+#### Command Line Parameters: These parameters can be supplied at the time of running the code. Below are the possible combinations that can be given for command line arguments. 
 
 -  Quality factor --Qf = {20,40,60,70,75,80,85,90}
 -  Stability index  --index = {'1' or 'all'} 
@@ -66,8 +66,6 @@ b) Command Line Parameters: These parameters can be supplied at the time of runn
 -  Run for all quality factors --all_Q = {0,1} 
 -  Number of repeated runs, --runs = {1,2,3,4,5,6,7,8,9,10}
 
-### Inference: 
- 
 i) please be aware that Qf = {20,40} is utilized for index = 'all' in our approach. 
 ii) if all_Q = 1, then the --Qf argument is ignored.
 
