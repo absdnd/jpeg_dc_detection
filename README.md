@@ -23,6 +23,30 @@ you can install all dependencies using `pip install -r requirements.txt`
 
 - After this please execute `./code/data_creation/save_error_images.m` in order to create all the error images.
 
+The file structure after saving the dataset would be as follows, 
+
+```
+/data
+  /dataset
+     /8
+       /train
+        /Quality_{Qf}
+          /index_all
+            /single
+               /1
+                 /single_error.mat
+                 /single_dct_error.mat
+               /2
+                 ....
+            /double
+              /1
+                 /double_error.mat
+                 /double_dct_error.mat
+              /2
+                 ....
+     
+```
+
 ### Usage 
 
 The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
