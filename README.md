@@ -64,57 +64,11 @@ python MCCNN.py --Qf=60 --index=1 --stack=2 --runs=2
 
 3) Results:  The results are saved in a folder called proposed results, in result_itr_(iteration_number).mat, the folder hierarchy is as shown below, 
 
-
-proposed_results
- |
- |    
- +-- MCNN
- 	| 
-	+--index_1
-	|
-	+--index_all
-		|
-		+--Quality_Qf
-			|
-			+--MCNN_stack_~_scale_~
-				|
-				+--results
-				|	|
-				|	+--result_itr_(iteration_number).mat
-				|	
-				+--loss_plots
-				|	|
-				|	+--loss_itr_(iteration_number).mat	
-				|	
-				+--weights
-					|
-					+--best_weights_(iteration_number).mat
-
-
-
-
 % Obtaining the baseline results
 
 Run ./code/generate_results/EBSF.m to obtain the baseline results of our approach. 
 
 i) Make sure to keep the libsvm folder in the same directory.
-ii) Please use Qf = {20,40} only with 'index=all' 
-
-
-1) Results: The results are saved in the proposed_results folder in the following format:
-
-
-proposed_results
- |
- |
- +---EBSF
-	|
-	+--Quality_Qf
-		|
-		+--index_stability_~
-			|
-			output_files.mat; 
-
 
 The output_file logs the results of the approach, the avg_accuracy variable stores the resulting accuracy of the run. 
 The average accuracy is also displayed after the execution of the code during runtime.
