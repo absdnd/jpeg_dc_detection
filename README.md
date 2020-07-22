@@ -10,7 +10,7 @@ This repository contains the code for reproducing results presented in the paper
 + matplotlib = '3.1.3'
 + numpy = '1.18.1'
 
-you can install all dependencies using `pip install -r requirements.txt`
+or you can install all dependencies using `pip install -r requirements.txt`
 
 # Getting Started
 ### Data Generation
