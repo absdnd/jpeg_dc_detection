@@ -4,7 +4,6 @@ This repository contains the code for reproducing results presented in the paper
 
 # Environments and Dependenices
 
-- python = '3.6.10'
 - tensorflow = '1.12.0' (cudatoolkit=9.0 & cudnn=7.1.2)
 - scipy = '1.4.1'
 - sklearn = '0.22.1'
@@ -17,7 +16,6 @@ This repository contains the code for reproducing results presented in the paper
 ## Data Generation
 
 - Download the [UCID dataset](https://drive.google.com/drive/folders/1AFZmvEZzHjjZJA5jMgTZKk4BuZXV3zH7?usp=sharing) containing 1338 images .TIF images and place it in the ./data folder. Please also compile and store the [jpeg-read-toolbox](http://dde.binghamton.edu/download/jpeg_toolbox.zip) in the correct location. 
-
 
 - Then execute ./code/data_creation/data_maker.m to create the Compressed_UCID_gray_full dataset. 
 
