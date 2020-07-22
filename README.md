@@ -15,7 +15,7 @@ We recommend installing the dependencies using conda.
 # Getting Started
 ### Data Generation
 
-+ Download the [UCID dataset](https://drive.google.com/drive/folders/1AFZmvEZzHjjZJA5jMgTZKk4BuZXV3zH7?usp=sharing) containing 1338 images .TIF images and place it in the ./data folder of the root directory. Also install the [jpeg-read-toolbox](http://dde.binghamton.edu/download/jpeg_toolbox.zip) and place it in `/code/data_creation/dependencies/`.
++ Download the [UCID dataset](https://drive.google.com/drive/folders/1AFZmvEZzHjjZJA5jMgTZKk4BuZXV3zH7?usp=sharing) containing 1338 images .TIF images and place it in the `./data folder` in the root directory. Also install the [jpeg-read-toolbox](http://dde.binghamton.edu/download/jpeg_toolbox.zip) and place it in `/code/data_creation/dependencies/`.
 
 - Then execute `./code/data_creation/data_maker.m` to create the Compressed_UCID_gray_full dataset. 
 
