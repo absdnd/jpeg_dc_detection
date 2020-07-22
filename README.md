@@ -23,9 +23,7 @@ you can install all dependencies using `pip install -r requirements.txt`
 
 - After this please execute `./code/data_creation/save_error_images.m` in order to create all the error images.
 
-- This should create the data for the training and testing pipeline. 
 
-- Please be aware that this saves all 8x8 possible blocks in our dataset and hence will take a long time to execute and utilize a lot of fragmented memory. For direct usage we have provided, the .mat files of data. 
 
 # Usage 
 
