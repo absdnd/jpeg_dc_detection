@@ -61,23 +61,24 @@ These parameters can be supplied at the time of running the code. Below are the 
 -  Run for all quality factors `--all_Q = {0,1}`
 -  Number of repeated runs, `--runs = {1,2,3,4,5,6,7,8,9,10}`
 
-#### Sample Command. 
-
-To run at quality  Qf = 60, index = 1 and stack = 2 for 2 runs the code is: 
-```shell
-python /code/generate_results/MCCNN.py \
--- Qf = 60 \
--- index = 1 \
--- stack = 2\
--- runs = 2
-```
-
-### Pretrained Models.
+#### Pretrained Models.
 
 - For direct inference the pretrained models can be downloaded from [here](https://drive.google.com/drive/folders/1bpR2UoW7VyibSNFcQynlm_dnK1ITGGSi?usp=sharing).
 - To use each quality factor separately download and place it under `proposed_results\index_all`. 
 - Alternatively, you can download all pretrained models by unzipping  the entire folder in `proposed_results`.
 
+
+#### Sample Command. 
+
+To reproduce our results at `--Qf = 60`, `--index = 'all'` and `--stack = 3` for 2 runs the code is: 
+```shell
+python /code/generate_results/MCCNN.py \
+-- Qf = 60 \
+-- index = 'all' \
+-- stack = 3\
+-- runs = 10
+```
+To execute for all quality factors please set the parameter `--all_Q=1`
 
 The resultant directory structure, with `output_files.mat` containing the resultant predictions. 
 
