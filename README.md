@@ -80,17 +80,32 @@ python /code/generate_results/MCCNN.py \
 ```
 To execute for all quality factors please set the parameter `--all_Q=1`
 
-The resultant directory structure, with `output_files.mat` containing the resultant predictions. 
+#### Obtaining Results 
 
+The results are saved in the following directory structure, with `output_files.mat` containing the resultant predictions. 
 
 ```
 /proposed_results
   /MCNN
-     /Quality_~
-         /index_1
-             /output_files.mat; 
-         /index_all/
-             /output_files.mat;
+     /index_all
+         /Quality_~
+            /runs
+              /MCNN_stack_3_scale_1
+                  /results/
+                      /results_itr_0.mat
+                      ..
+                      ..
+                      ..
+                  /loss_plots/
+                      /loss_itr_0.png
+                      ..
+                      ..
+                      ..
+                  /weights/
+                     /best_weights_itr_0.mat
+                     ..
+                     ..
+                     ..
 ```
 
 
