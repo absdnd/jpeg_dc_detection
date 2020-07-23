@@ -108,8 +108,3 @@ The results are saved in the following directory structure, with `output_files.m
                      ..
 ```
 
-
-
-
-
-
