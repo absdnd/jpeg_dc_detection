@@ -47,6 +47,8 @@ The file structure after saving the dataset would be as follows,
      
 ```
 
+The dataset of error images is also available directly for download [here](https://drive.google.com/drive/folders/1nGSVn4so7GqcdH_4mHymqveYSWvuNriQ?usp=sharing), which is to be save in `./data` folder in the root directory. 
+
 ### Training and Inference
 
 The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
