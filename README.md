@@ -67,7 +67,7 @@ These parameters can be supplied at the time of running the code. Below are the 
 
 - For direct inference the pretrained models can be downloaded from [here](https://drive.google.com/drive/folders/1bpR2UoW7VyibSNFcQynlm_dnK1ITGGSi?usp=sharing).
 - To use each quality factor separately download and place it under `proposed_results/MCNN/index_all`. 
-- Alternatively, you can download all pretrained models by unzipping  the entire folder in `proposed_results`.
+- Alternatively, you can download all pretrained models by unzipping  the entire folder in `proposed_results/MCNN`.
 
 
 #### Sample Command. 
