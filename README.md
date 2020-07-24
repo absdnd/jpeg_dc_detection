@@ -78,9 +78,11 @@ python /code/generate_results/MCCNN.py \
 -- Qf = 60 \
 -- index = 'all' \
 -- stack = 3\
--- runs = 10
+-- runs = 10\
+-- ptr = 1
 ```
-To execute for all quality factors please set the parameter `--all_Q=1`
+- To execute for all quality factors please set the parameter `--all_Q=1`
+- Set `--ptr = 1` to use the pretrained model. 
 
 #### Obtaining Results 
 
