@@ -15,7 +15,8 @@ ls = 0;
 prefixes = {'test/','train/'};
 patch_size = 8;
 
-for q = 2
+% Choose quality factors. 
+for q = 1:length(Q_list)
     % Saving the error image. 
     Q_val = Q_list(q) 
     single_train_path  = [dir_path, 'dataset/', int2str(patch_size),'/train/', 'Quality_', int2str(Q_val),'/index_',stability_index,'/single'];
