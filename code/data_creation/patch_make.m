@@ -20,7 +20,9 @@ else
     image_range = length(files)/2+1:length(files);
 end
 
-for q = 2
+
+for q = 1:length(Q_list)
+
    Q_val = Q_list(q)
 
    prefix = strcat(dir_path, 'Compressed_UCID_gray_full/Quality_',int2str(Q_val));
