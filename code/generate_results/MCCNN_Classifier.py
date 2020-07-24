@@ -37,6 +37,7 @@ parser.add_argument("--index", default = '1',type = str)
 parser.add_argument("--stack", default = 3);
 parser.add_argument('--all_Q',default = 0, type = int)
 parser.add_argument('--runs', default = 1, type = int)
+parser.add_argument('--ptr', default = 0, type = int)
 args = parser.parse_args()
 
 
@@ -48,6 +49,7 @@ Qf = args.Qf
 stability_index = args.index
 k_single  = int(args.stack)
 all_Q = args.all_Q
+ptr = int(args.ptr)
 
 ### Fixed Parameters
 
@@ -389,13 +391,7 @@ for q in range(len(Q_list)):
 
 		CNN = Multi_Coloumn_CNN_DCT(k_single)
 		CNN.summary()
-	
-		
-	
-		CNN.compile(optimizer = tf.keras.optimizers.Adam(lr = lr),loss='binary_crossentropy',metrics=['accuracy',custom])
-		mkdir(res_prefix)
-		mkdir(res_prefix + save_name)
-		
+
 		result_path = res_prefix  +  save_name + '/index_' + str(stability_index)		
 		save_suffix =  method  + '_stack_' + str(k_single) +  '_scale_' + str(scale)
 
@@ -408,39 +404,44 @@ for q in range(len(Q_list)):
 		mkdir(result_path + '/runs/' + save_suffix + '/weights')
 		mkdir(result_path + '/runs/' + save_suffix + '/results')
 		mkdir(result_path + '/runs/' + save_suffix + '/loss_plots')
-					 
+
 		filepath = result_path  + '/runs/' +  save_suffix + '/weights/best_weight_itr_' + str(r) + '.hdf5'
-		checkpoint = ModelCheckpoint(filepath, monitor = 'val_custom', verbose=0, save_best_only=True, mode='max')
-		callbacks_list = [checkpoint]
-
-		# Fit CNN with model. 
-		history  = CNN.fit([x_train, x_train_dct],y_train, epochs=max_epochs, batch_size=bs, shuffle=False, validation_data = ([x_valid,x_valid_dct],y_valid),callbacks=callbacks_list) 
+		
+		if(ptr == 0):
+			CNN.compile(optimizer = tf.keras.optimizers.Adam(lr = lr),loss='binary_crossentropy',metrics=['accuracy',custom])
+			mkdir(res_prefix)
+			mkdir(res_prefix + save_name)
 			
-		# Saving validation plots. 
-		plt.figure()
-		plt.plot(history.history['acc'])
-		plt.plot(history.history['val_acc'])
-		plt.title('model accuracy')
-		plt.ylabel('accuracy')
-		plt.xlabel('epoch')
-		plt.legend(['train', 'test'], loc='upper left')
-		plt.savefig(result_path + '/runs/' + save_suffix + '/loss_plots/acc_itr_' + str(r) + '.png')
+			checkpoint = ModelCheckpoint(filepath, monitor = 'val_custom', verbose=0, save_best_only=True, mode='max')
+			callbacks_list = [checkpoint]
+			
+			# Fit CNN with model. 
+			history  = CNN.fit([x_train, x_train_dct],y_train, epochs=max_epochs, batch_size=bs, shuffle=False, validation_data = ([x_valid,x_valid_dct],y_valid),callbacks=callbacks_list) 
+				
+			# Saving validation plots. 
+			plt.figure()
+			plt.plot(history.history['acc'])
+			plt.plot(history.history['val_acc'])
+			plt.title('model accuracy')
+			plt.ylabel('accuracy')
+			plt.xlabel('epoch')
+			plt.legend(['train', 'test'], loc='upper left')
+			plt.savefig(result_path + '/runs/' + save_suffix + '/loss_plots/acc_itr_' + str(r) + '.png')
 
-		plt.figure()
-		plt.plot(history.history['loss'])
-		plt.plot(history.history['val_loss'])
-		plt.title('model loss')
-		plt.ylabel('loss')
-		plt.xlabel('epoch')
-		plt.legend(['train', 'test'], loc='upper left')
-		plt.savefig(result_path + '/runs/'+ save_suffix + '/loss_plots/loss_itr_' + str(r) + '.png')
+			plt.figure()
+			plt.plot(history.history['loss'])
+			plt.plot(history.history['val_loss'])
+			plt.title('model loss')
+			plt.ylabel('loss')
+			plt.xlabel('epoch')
+			plt.legend(['train', 'test'], loc='upper left')
+			plt.savefig(result_path + '/runs/'+ save_suffix + '/loss_plots/loss_itr_' + str(r) + '.png')
 
 		## Obtaining testing results
 		CNN.load_weights(filepath)
 		y_pred = CNN.predict([test,test_dct])
 		
 		# Rounding to closest integer to obtain labels. 
-
 		y_pred[y_pred>=0.5] = 1
 		y_pred[y_pred<=0.5] = 0
 		y_test = test_labels
@@ -450,22 +451,17 @@ for q in range(len(Q_list)):
 		TN = true_negative(y_test,y_pred)
 		C  = confusion_mat(y_test,y_pred)
 
-
 		AR_mean += (TP+TN)/2
 		TP_mean += TP
 		TN_mean += TN
 
 		#Saving individual iterations. 
-
 		scipy.io.savemat(result_path + '/runs/' +  save_suffix + '/results/results_itr_' + str(r) + '.mat', mdict = {'AR': (TP+TN)/2, 'TP':TP, 'TN':TN , 'y_pred':y_pred, 'y_gt' : y_test,'single_size':single_size, 'double_size':double_size,'confusion':C})
 
 	#Obtaining Single and Double Size. 	
-		
 	AR_mean = 1.0*(AR_mean/runs)
 	TP_mean = 1.0*(TP_mean/runs)
 	TN_mean = 1.0*(TN_mean/runs)
-
-
 	# Saving the average results for quality factor Qf. 	
 	scipy.io.savemat(result_path + '/runs/' + save_suffix + '/results/avg.mat', mdict = {'AR': AR_mean,  'TP':TP_mean, 'TN':TN_mean,'single_test_size':single_size, 'double_test_size':double_size})
 
