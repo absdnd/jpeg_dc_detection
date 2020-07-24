@@ -19,9 +19,9 @@ We recommend installing the dependencies using conda.
 
 - Then execute `./code/data_creation/data_maker.m` to create the Compressed_UCID_gray_full dataset. 
 
-- Execute  `./code/data_creation/patch_maker.m` , to create the training and testing 8 x 8 patches. 
+- Execute  `./code/data_creation/patch_maker.m` , to create the training and testing 8 x 8 patches, with both `train = True` and `train = False`. 
 
-- After this please execute `./code/data_creation/save_error_images.m` in order to create all the error images.
+- After this please execute `./code/data_creation/save_error_images.m` in order to create all the error images for the generated patches. 
 
 The file structure after saving the dataset would be as follows, 
 
