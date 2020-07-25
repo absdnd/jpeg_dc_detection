@@ -1,5 +1,3 @@
-### Author: Abhinav Narayan Harish ### 
-
 
 # Import the Necessary Libraries.
 

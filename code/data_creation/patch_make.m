@@ -1,4 +1,4 @@
-% Code to create patches of index = 1 
+
 addpath('dependencies/jpeg_read_toolbox');
 
 Q_list = [20,40,60,70,75,80,85,90];
