@@ -118,37 +118,6 @@ for q = 1:length(Q_list)
         end
     end
     
-    single_vec_test(:,end+1) = ls*ones(size(single_vec_test,1),1);
-    single_vec_train(:,end+1) = ls*ones(size(single_vec_train,1),1);
-    
-    double_vec_test(:,end+1) = ld*ones(size(double_vec_test,1),1);
-    double_vec_train(:,end+1) = ld*ones(size(double_vec_train,1),1);
-
-    single_train_size = size(single_vec_train,1);
-    single_test_size = size(single_vec_test,1);
-
-    training = vertcat(single_vec_train,double_vec_train);
-    testing = vertcat(single_vec_test,double_vec_test);
-
-    TF = isnan(training);
-    idx = TF == 1;
-    training(idx) = 0;
-
-    TF = isnan(testing);
-    idx = TF == 1;
-    testing(idx) = 0;
-    
-    [training_new, testing_new,indices] = remove_zero_feature(training,testing);
-    single_vec_train = training_new(1:single_train_size,:);
-    double_vec_train = training_new(single_train_size+1:end,:);
-    
-    single_vec_test = testing_new(1:single_test_size,:);
-    double_vec_test = testing_new(single_test_size+1:end,:);
-
-    save(strcat(single_train_path,'/EBSF_single_train.mat'),'single_vec_train','indices');
-    save(strcat(double_train_path,'/EBSF_double_train.mat'),'double_vec_train','indices');
-    save(strcat(single_test_path,'/EBSF_single_test.mat'),'single_vec_test','indices');
-    save(strcat(double_test_path,'/EBSF_double_test.mat'),'double_vec_test','indices'); 
     
 end
 
