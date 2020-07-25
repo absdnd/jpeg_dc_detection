@@ -47,11 +47,11 @@ The file structure after saving the dataset would be as follows,
      
 ```
 
-The dataset of error images is also available directly for download [dataset](https://drive.google.com/drive/folders/1nGSVn4so7GqcdH_4mHymqveYSWvuNriQ?usp=sharing), which is to be save in `./data` folder in the root directory. 
+The dataset of error images is also available directly for download [here](https://drive.google.com/drive/folders/1nGSVn4so7GqcdH_4mHymqveYSWvuNriQ?usp=sharing), which is to be saved in `./data` folder in the root directory. 
 
 ### Training and Inference
 
-The main code to run our approach is MCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
+The main code to run our approach is MCCNN_Classifier.py, which use the default runtime settings of our model as mentioned in the paper. They include, 
 
 #### Command Line Parameters: 
 
@@ -115,6 +115,8 @@ The results are saved in the following directory structure, with `results_itr_~.
 ### References: 
 
 - Schaefer, Gerald, and Michal Stich. "UCID: An uncompressed color image database." Storage and Retrieval Methods and Applications for Multimedia 2004. Vol. 5307. International Society for Optics and Photonics, 2003.
+
+
 
 
 ### Citation 
