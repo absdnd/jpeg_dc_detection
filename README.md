@@ -15,7 +15,7 @@ We recommend installing the dependencies using conda.
 # Getting Started
 ### Data Generation
 
-+ Download the [UCID dataset](https://drive.google.com/drive/folders/1AFZmvEZzHjjZJA5jMgTZKk4BuZXV3zH7?usp=sharing) containing 1338 images .TIF images and place it in the `./data folder` in the root directory. Also install the [jpeg-read-toolbox](http://dde.binghamton.edu/download/jpeg_toolbox.zip) and place it in `/code/data_creation/dependencies/`.
++ Download the UCID dataset containing 1338 images .TIF images and place it in the `./data folder` in the root directory. Also install the [jpeg-read-toolbox](http://dde.binghamton.edu/download/jpeg_toolbox.zip) and place it in `/code/data_creation/dependencies/`.
 
 - Then execute `./code/data_creation/data_maker.m` to create the Compressed_UCID_gray_full dataset. 
 
@@ -86,7 +86,7 @@ python /code/generate_results/MCCNN.py \
 
 #### Obtaining Results 
 
-The results are saved in the following directory structure, with `output_files.mat` containing the resultant predictions. 
+The results are saved in the following directory structure, with `results_itr_~.mat` containing the resultant predictions. 
 
 ```
 /proposed_results
@@ -111,6 +111,7 @@ The results are saved in the following directory structure, with `output_files.m
                      ..
                      ..
 ```
+
 ### Citation 
 
 ```@inproceedings{Harish2020Double,
