@@ -115,9 +115,7 @@ The results are saved in the following directory structure, with `output_files.m
 
 ```@inproceedings{Harish2020Double,
   title={Double JPEG Compression Detection for Distinguishable Blocks in Images Compressed with Same Quantization Matrix},
-  author={Brodersen, KH and Ong, CS and Stephan, KE and Buhmann, JM},
-  booktitle={20th International Conference on Pattern RecognitIion},
-  pages={3121--3124},
-  year={2010},
-  organization={IEEE}
+  author={Abhinav Narayan Harish*, Vinay Verma*, Nitin Khanna},
+  booktitle={IEEE International Workshop on Machine Learning for Signal Processing}
+  year={2020}
 ```
