@@ -72,7 +72,7 @@ These parameters can be supplied at the time of running the code. Below are the 
 
 #### Sample Command. 
 
-To reproduce our results at `--Qf = 60`, `--index = 'all'` and `--stack = 3` for 2 runs the code is: 
+To reproduce our results at `--Qf = 60`, `--index = 'all'` and `--stack = 3` for `--runs=10` the code is: 
 ```shell
 python /code/generate_results/MCCNN.py \
 -- Qf = 60 \
