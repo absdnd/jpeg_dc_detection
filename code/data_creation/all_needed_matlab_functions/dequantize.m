@@ -7,6 +7,7 @@
 %    QTABLE is applied to each coefficient block in QCOEF (shaped as an image)
 %    as follows: new value = old value * table value
 
+% Phil Sallee 9/03
 function coef = dequantize(qcoef,qtable)
 
 blksz = size(qtable);
