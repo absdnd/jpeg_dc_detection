@@ -111,4 +111,13 @@ The results are saved in the following directory structure, with `output_files.m
                      ..
                      ..
 ```
+### Citation 
 
+```@inproceedings{bib:brodersen2010balanced,
+  title={The balanced accuracy and its posterior distribution},
+  author={Brodersen, KH and Ong, CS and Stephan, KE and Buhmann, JM},
+  booktitle={20th International Conference on Pattern RecognitIion},
+  pages={3121--3124},
+  year={2010},
+  organization={IEEE}
+```
