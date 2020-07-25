@@ -53,21 +53,20 @@ for q = 1:length(Q_list)
 
                if(length(single_path)>0)
                    
-                     [trunc,round,single_dct_error, single_error, single_EBSF] = TIFS_2014(single_path);
+                     [trunc,round,single_dct_error, single_error] = collect_error(single_path);
                end
                 
                 save([single_save_path,'/',int2str(k),'/','single_error'],'single_error','trunc','round');
                 save([single_save_path,'/',int2str(k),'/','single_dct_error'],'single_dct_error','trunc','round');
                 
                 if(k==1)
-                    single_vec_train = single_EBSF;
                     single_trunc_train = trunc;
                     single_round_train = round;
                 end
                 
                 if(length(double_path)>0)
                    
-                    [trunc, round,double_dct_error, double_error, double_EBSF] = TIFS_2014(double_path);
+                    [trunc, round,double_dct_error, double_error] = collect_error(double_path);
 
                 end
                 
@@ -75,7 +74,6 @@ for q = 1:length(Q_list)
                 save([double_save_path,'/',int2str(k+1),'/','double_dct_error'],'double_dct_error','trunc','round');
                 
                 if(k == 1)
-                    double_vec_train = double_EBSF;
                     double_trunc_train = trunc;
                     double_round_train = round;
                 end
@@ -83,11 +81,10 @@ for q = 1:length(Q_list)
             else
                 
                 if(length(single_path)>0)
-                    [trunc,round,single_dct_error,single_error, single_EBSF] = TIFS_2014(single_path);
+                    [trunc,round,single_dct_error,single_error] = collect_error(single_path);
                 end
                
                 if(k==1)
-                    single_vec_test = single_EBSF;
                     single_trunc_train = trunc;
                     double_round_train = round;
                 end
@@ -97,14 +94,13 @@ for q = 1:length(Q_list)
                 save([single_save_path,'/',int2str(k),'/','single_dct_error'],'single_dct_error','trunc','round');
                 
                 if(length(double_path)>0)
-                   [trunc, round, double_dct_error, double_error, double_EBSF] = TIFS_2014(double_path);
+                   [trunc, round, double_dct_error, double_error] = collect_error(double_path);
 
                 end
                 
                 if(k==1)
                     double_trunc_test = trunc;
                     double_round_test = round;
-                    double_vec_test = double_EBSF;
                 end
                 
                 save([double_save_path,'/',int2str(k+1),'/','double_error'],'double_error','trunc','round');
