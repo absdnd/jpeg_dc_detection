@@ -112,6 +112,11 @@ The results are saved in the following directory structure, with `results_itr_~.
                      ..
 ```
 
+### References: 
+
+- Schaefer, Gerald, and Michal Stich. "UCID: An uncompressed color image database." Storage and Retrieval Methods and Applications for Multimedia 2004. Vol. 5307. International Society for Optics and Photonics, 2003.
+
+
 ### Citation 
 
 ```@inproceedings{Harish2020Double,
