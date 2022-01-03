@@ -2,6 +2,8 @@
 
 This repository contains the code for reproducing results presented in the paper "Double JPEG Compression Detection of Distinguishable Blocks in Images Compressed With Same Quantization Matrix" (MLSP 2020)
 
+![MLSP_result](https://user-images.githubusercontent.com/30770447/147896316-dfa6a826-8307-46da-a748-787735085a76.png)
+
 # Environments and Dependenices
 
 + tensorflow = '1.12.0' (cudatoolkit=9.0 & cudnn=7.1.2)
